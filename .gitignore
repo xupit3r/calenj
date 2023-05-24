@@ -12,3 +12,7 @@ pom.xml.asc
 .hgignore
 .hg/
 .env
+profiles.clj
+.lein-env
+.clj-kondo
+.lsp
