@@ -1,7 +1,7 @@
 (ns calenj.core
-  (:gen-class))
+  (:gen-class)
+  (:require [calenj.routes :as routes]
+            [org.httpkit.server :as http]))
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
+(defn -main [& _args]
+  (http/run-server routes/all {:port 8080}))
